@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width" />
+        <style type="text/css">@import url('http://www.kylewaynebenson.com/qualtrics/qualtrics-grotesque/qualtricsgrotesque-regular-webfont.woff');
+
+            .overallscore{
+                font-size: 1.250em;
+                font-weight: 600;
+            }
+
+            @media screen and (max-width: 600px) {
+                .width-full {
+                  width: 100% !important;
+                }
+
+              @media screen and (max-width: 320px) {
+                .email-title {
+                  font-size: 1.875em !important;
+                  line-height: 23px !important;
+                  padding-top: 20px !important;
+                }
+                .email-intro {
+                  font-size: 0.875em !important;
+                  line-height: 21px !important;
+                }
+                .email-body {
+                  font-size: 0.875em !important;
+                  line-height: 21px !important;
+                }
+                .signature {
+                    width: 250px !important;
+                    height: 45px !important;
+                }
+                .scoretable {
+                    font-size: 0.875em !important;
+                }
+                .overallscore{
+                    font-size: 1.125em !important;
+                }
+              }
+
+              @media screen and (min-width: 321px) and (max-width: 414px) {
+                .email-title{
+                  font-size: 2em !important;
+                  line-height: 25px !important;
+                }
+                .email-intro {
+                  font-size: 1em !important;
+                  line-height: 21px !important;
+                }
+                .signature {
+                    width: 200px !important;
+                    height: 40px !important;
+                }
+                .email-body {
+                  font-size: 0.9em !important;
+                  line-height: 21px !important;
+                }
+              }
+            </style>
+        </head>
+    
+    <body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td style="padding: 0 10px;">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="width-full" width="600">
+				<tbody>
+					<tr>
+						<td><img alt="" src="https://www.qualtrics.com/wp-content/themes/qualtrics/images/pages/certification/qualtrics%20certification%20header.jpg" style="display: block; max-width: 100%;" width="600" /></td>
+					</tr>
+					<tr>
+						<td class="email-title" style="color: #3a383a; font-family:'Helvetica Neue', Helvetica, sans-serif; font-size: 2.5625em; font-weight: 100; line-height: 44px; padding-top: 60px;">Hi&nbsp;${e://firstName},</td>
+					</tr>
+					<tr>
+						<td class="email-intro" style="color: #3a383a; font-family: 'Qualtrics Grotesque','Helvetica Neue', Helvetica, sans-serif; font-size: 1.125em; line-height: 27px; padding-top: 40px;">Unfortunately, you did not pass the EX Expert Certification exam. However, you can try again! We recommend these steps to help you get over any remaining hurdles.</td>
+					</tr>
+					<tr>
+						<td class="email-body" style="color: #3a383a; font-family: 'Qualtrics Grotesque','Helvetica Neue', Helvetica, sans-serif; font-size: 1.125em; line-height: 27px; padding-top: 20px;">
+						<ul>
+							<li><span style="font-weight: 700;">Review:</span> Check your exam results below to identify any gaps.</li>
+							<li><span style="font-weight: 700;">​Learn by Doing:</span> Revisit the online training including the quizzes and projects.</li>
+							<li><span style="font-weight: 700;">Reschedule:</span> Reschedule your exam in your Certification platform.</li>
+						</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="email-intro" style="color: #3a383a; font-family: 'Qualtrics Grotesque','Helvetica Neue', Helvetica, sans-serif; font-size: 1.125em; line-height: 27px; padding-top: 20px;">We are confident you will pass the EX Expert Certification exam very soon!</td>
+					</tr>
+					<tr>
+						<td class="email-body" style="color: #3a383a; font-family: 'Qualtrics Grotesque','Helvetica Neue', Helvetica, sans-serif; font-size: 1.125em; line-height: 27px; padding-top: 30px;">Sincerely,&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="signature"><img height="50" src="https://certification.qualtrics.com/CP/Graphic.php?IM=IM_87mTIAOn6hKqHNb" style="font-size: 0.875em; width: 300px; height: 50px; float: left; padding-top: 30px; padding-bottom: 20px; height: 50;" width="300" /></td>
+					</tr>
+					<tr>
+						<td>
+						<hr style=" border: 0; height: 0; padding-top: 15px; border-top: 1px solid #d9e0e2;" /></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="width-full" width="600">
+				<tbody>
+					<tr>
+						<td class="scoretable" style="color: #3a383a; font-size: 1.125em; font-weight: 100; line-height: 30px; padding: 15px 0 50px 0;">
+						<table class="scores" style="border-collapse: collapse; font-family: 'Qualtrics Grotesque','Helvetica Neue', Helvetica, sans-serif; width: 100%; background-color: #f0f0f0; border-radius: 4px;">
+							<tbody>
+								<tr>
+									<td style="margin-bottom: 20px; line-height: 1.4em; padding: 10px 10px 20px 10px; font-size: 1.2em; font-weight: 600;">Overall Score</td>
+									<td style="margin-bottom: 20px; line-height: 1.4em; text-align: right; padding: 10px 10px 20px 10px; font-size: 1.2em; font-weight:600;">${e://Field/percent}%</td>
+								</tr>
+								<!-- Add when categories are set
+								<tr>
+									<td style="padding: 10px;">Basic Survey Questions</td>
+									<td style="text-align: right; padding: 10px;">${e://Field/section1}</td>
+								</tr>
+								<tr>
+									<td style="padding: 10px;">Sharing &amp; Sending Surveys</td>
+									<td style="text-align: right; padding: 10px;">${e://Field/section2}</td>
+								</tr>
+								<tr>
+									<td style="padding: 10px;">Skip &amp; Display Logic, Styling Text</td>
+									<td style="text-align: right; padding: 10px;">${e://Field/section3}</td>
+								</tr>
+								<tr>
+									<td style="padding: 10px;">Ending the Survey</td>
+									<td style="text-align: right; padding: 10px;">${e://Field/section4}</td>
+								</tr>
+								<tr>
+									<td style="padding: 10px;">Distributing Surveys</td>
+									<td style="text-align: right; padding: 10px;">${e://Field/section5}</td>
+								</tr>
+								<tr>
+									<td style="padding: 10px;">Survey Flow Elements &amp; Piped Text</td>
+									<td style="text-align: right; padding: 10px;">${e://Field/section6}</td>
+								</tr>
+								<tr>
+									<td style="padding: 10px;">Examining Response Data</td>
+									<td style="text-align: right; padding: 10px;">${e://Field/section7}</td>
+								</tr>
+								<tr>
+									<td style="padding: 10px;">Reporting Your Data</td>
+									<td style="text-align: right; padding: 10px;">${e://Field/section8}</td>
+								</tr>
+								-->
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="width-full" width="35%">
+				<tbody>
+					<tr>
+						<td bgcolor="#2E393F" style="font-family: 'Qualtrics Grotesque','Helvetica Neue', Helvetica, sans-serif; border-collapse: collapse; border-style: solid; border-color: rgb(46, 57, 63); border-radius: 5px; padding: 12px 19px; font-size: 16px; text-align: center;"><a href="https://certification.ca1.qualtrics.com/qcertification/sso/login" style="color: rgb(255, 255, 255); text-decoration-line: none;" target="_blank">Get Started Reviewing</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="width-full" style="font-family: 'Qualtrics Grotesque','Helvetica Neue', Helvetica, sans-serif;" width="600">
+				<tbody>
+					<tr>
+						<td style="color: #3a383a; font-size: 1.125em; font-weight: 100; line-height: 40px; padding-top: 60px;"><a href="https://www.qualtrics.com/?utm_medium=email+signature&amp;utm_source=internal+initiatives" target="_blank"><font color="#333333" face="sans-serif, Arial, Verdana, Trebuchet MS"><img border="0" constrain="true" imagepreview="false" src="https://ci4.googleusercontent.com/proxy/Hk5r_OE0r2uyX5fO-3H3Ty19ZU0dxvGriChVu0GizFMEaFSQeI7m8LN0EoZ5gvYr6SZYX3VRRuUk22X46T0P1-3AewQ_d7-oz3VtJSt-yvtdwyGOIbplRztbYi4U=s0-d-e1-ft#https://www.qualtrics.com/wp-content/uploads/2017/03/QXM-logo-bar-3.png" width="220" /></font></a></td>
+					</tr>
+					<tr>
+						<td>333 River Park Drive | Provo, Utah</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+    </body>
+</html>
